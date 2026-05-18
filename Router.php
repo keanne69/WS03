@@ -94,6 +94,6 @@ Add GET route
                 return;
             }
         }
-        $this->error();
+        $this->error(404);
     }
 }

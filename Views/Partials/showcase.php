@@ -1,5 +1,7 @@
 <section class="hero-section">
-    <div class="overlay"></div>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-one"></div>
+    <div class="hero-orb hero-orb-two"></div>
 
     <div class="container mx-auto hero-content">
         <div class="hero-badge">
@@ -12,7 +14,7 @@
             Browse opportunities from different companies and take the next step in your career journey.
         </p>
 
-        <form class="hero-search-form">
+        <form method="GET" action="/WS03/Public/listings" class="hero-search-form">
             <div class="input-group">
                 <i class="fa fa-search"></i>
                 <input type="text" name="keywords" placeholder="Job title or keyword" />
@@ -23,7 +25,7 @@
                 <input type="text" name="location" placeholder="Location" />
             </div>
 
-            <button class="btn btn-primary search-btn">
+            <button class="btn btn-primary search-btn" type="submit">
                 <i class="fa fa-search"></i>
                 Search Jobs
             </button>

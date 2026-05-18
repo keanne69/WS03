@@ -1,30 +1,18 @@
 <?php loadPartial('head'); ?>
 <?php loadPartial('navbar'); ?>
 
-<section class="error-page">
+<section class="error-page" style="display: flex; align-items: center; justify-content: center; min-height: 80vh;">
     <div class="error-wrap">
         <div class="error-card">
-            <div class="error-icon-wrap">
-                <div class="error-icon-spin">
-                    <i class="fa fa-exclamation-circle"></i>
-                </div>
-            </div>
-
-            <span class="error-badge">Error 404</span>
-            <h1 class="error-title">Page Not Found</h1>
+            <h1 class="error-title" style="color: var(--primary) !important; font-size: 6rem;">404</h1>
+            <h2 style="font-size: 1.8rem; font-weight: 600; margin-bottom: 1rem;">Page Not Found</h2>
             <p class="error-text">
-                Sorry, the page you are looking for could not be found.
+                The page you are looking for doesn't exist or has been moved.
             </p>
-
             <div class="error-actions">
-                <a href="/WS03/Public/" class="btn error-btn-primary">
+                <a href="/WS03/Public/" class="btn" style="background: var(--primary); color: white; padding: 0.8rem 2rem; border-radius: var(--radius-sm);">
                     <i class="fa fa-house"></i>
                     Back to Home
-                </a>
-
-                <a href="/WS03/Public/listings" class="btn error-btn-secondary">
-                    <i class="fa fa-briefcase"></i>
-                    Browse Jobs
                 </a>
             </div>
         </div>

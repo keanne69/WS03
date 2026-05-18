@@ -1,10 +1,7 @@
 <?php
 
-$config = require basePath('Config/db.php');
-$db = new Database($config);
+global $db;
 
-$listings = $db->Query('SELECT * FROM listings LIMIT 6')->fetchAll();
+$listings = $db->Query('SELECT * FROM listings ORDER BY created_at DESC LIMIT 6')->fetchAll();
 
-inspect($listings);
-
-loadView('home');
+loadView('home', ['listings' => $listings]);
